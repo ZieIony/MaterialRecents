@@ -8,7 +8,7 @@ Easy to use adapter container. For details check the sample code. Uses CardView,
 
 To include in your project, check: https://jitpack.io/#ZieIony/MaterialRecents/d2aec46f48
 
-  repositories {
+  	repositories {
 	    maven {
 	        url "https://jitpack.io"
 	    }
