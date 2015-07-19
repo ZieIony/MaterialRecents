@@ -52,7 +52,9 @@ public class RecentsList extends FrameLayout implements GestureDetector.OnGestur
 
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
-        super.onLayout(changed, left, top, right, bottom);
+        //super.onLayout(changed, left, top, right, bottom);
+        int width = right-left;
+        int height = bottom - top;
 
         if (adapter == null)
             return;
@@ -61,7 +63,7 @@ public class RecentsList extends FrameLayout implements GestureDetector.OnGestur
             initChildren();
 
         for (int i = 0; i < getChildCount(); i++) {
-            getChildAt(i).layout(0, 0, getWidth() - getPaddingLeft() - getPaddingRight(), getWidth() - getPaddingLeft() - getPaddingRight());
+            getChildAt(i).layout(0, 0, width - getPaddingLeft() - getPaddingRight(), height - getPaddingLeft() - getPaddingRight());
         }
     }
 
@@ -84,7 +86,7 @@ public class RecentsList extends FrameLayout implements GestureDetector.OnGestur
             cardContent.addView(adapter.getView(i));
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
                 card.setLayerType(View.LAYER_TYPE_HARDWARE, null);
-            addView(card);
+            addView(card,i,generateDefaultLayoutParams());
         }
     }
 
@@ -109,6 +111,7 @@ public class RecentsList extends FrameLayout implements GestureDetector.OnGestur
     @Override
     protected void dispatchDraw(Canvas canvas) {
         layoutChildren();
+        requestLayout();
         super.dispatchDraw(canvas);
         doScrolling();
     }
