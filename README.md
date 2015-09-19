@@ -11,7 +11,7 @@ I was asked to extract some of the features of the Carbon library to separate pr
 To include in your project, check: https://jitpack.io/#ZieIony/MaterialRecents/d2aec46f48
 
     repositories {
-	maven {
+        maven {
             url "https://jitpack.io"
         }
     }
