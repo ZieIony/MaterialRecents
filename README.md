@@ -10,21 +10,20 @@ I was asked to extract some of the features of the Carbon library to separate pr
 
 To include in your project, check: https://jitpack.io/#ZieIony/MaterialRecents/d2aec46f48
 
-  	repositories {
-	    maven {
-	        url "https://jitpack.io"
-	    }
-	}
+    repositories {
+	maven {
+            url "https://jitpack.io"
+        }
+    }
 	
-	dependencies {
-	        compile 'com.github.ZieIony:MaterialRecents:d2aec46f48'
-	}
-
+    dependencies {
+        compile 'com.github.ZieIony:MaterialRecents:d2aec46f48'
+    }
 
 ##### Usage
 
-        RecentsList recents = (RecentsList) findViewById(R.id.recents);
-        recents.setAdapter(new RecentsAdapter() {
+    RecentsList recents = (RecentsList) findViewById(R.id.recents);
+    recents.setAdapter(new RecentsAdapter() {
         @Override
         public String getTitle(int position) {
             return "Item "+position;
@@ -52,3 +51,4 @@ To include in your project, check: https://jitpack.io/#ZieIony/MaterialRecents/d
         public int getCount() {
             return 10;
         }
+    }
