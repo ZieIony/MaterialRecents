@@ -2,6 +2,8 @@
 
 Easy to use adapter container. For details check the sample code. Uses CardView, works on all Android versions back to Froyo.
 
+I was asked to extract some of the features of the Carbon library to separate projects so it's possible to include just one feature in one's app. This project is one of them. For all features, demos, changelog and Maven support check out Carbon: https://github.com/ZieIony/Carbon
+
 ![gif](https://github.com/ZieIony/MaterialRecents/blob/master/images/recents.gif)
 
 ##### Importing
