@@ -8,7 +8,7 @@ I was asked to extract some of the features of the Carbon library to separate pr
 
 ##### Importing
 
-To include in your project, check: https://jitpack.io/#ZieIony/MaterialRecents/d2aec46f48
+To include in your project, check: https://jitpack.io/#ZieIony/MaterialRecents
 
     repositories {
         maven {
@@ -17,7 +17,7 @@ To include in your project, check: https://jitpack.io/#ZieIony/MaterialRecents/d
     }
 	
     dependencies {
-        compile 'com.github.ZieIony:MaterialRecents:d2aec46f48'
+        compile 'com.github.ZieIony:MaterialRecents:master-SNAPSHOT'
     }
 
 ##### Usage
