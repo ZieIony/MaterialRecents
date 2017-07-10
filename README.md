@@ -4,6 +4,8 @@ Easy to use adapter container. For details check the sample code. Uses CardView,
 
 I was asked to extract some of the features of the Carbon library to separate projects so it's possible to include just one feature in one's app. This project is one of them. For all features, demos, changelog and Maven support check out Carbon: https://github.com/ZieIony/Carbon
 
+### _This project is not really maintained. It could be written better - reuse views, have some kind of configuration and handle touches properly. Unfortunatelly I don't have time to add any of these features. If you wish, you may reuse any parts of this project, propose pull requests to this repo or base your own solutions on my code. I'm leaving issues section open for your convenience._
+
 ![gif](https://github.com/ZieIony/MaterialRecents/blob/master/images/recents.gif)
 
 ##### Importing
