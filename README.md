@@ -19,7 +19,7 @@ To include in your project, check: https://jitpack.io/#ZieIony/MaterialRecents
     }
 	
     dependencies {
-        compile 'com.github.ZieIony:MaterialRecents:master-SNAPSHOT'
+        implementation 'com.github.ZieIony:MaterialRecents:master-SNAPSHOT'
     }
 
 ##### Usage
